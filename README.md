@@ -1,0 +1,1 @@
+Desenvolvi meu primeiro projeto em HTML e CSS, criando uma Landing Page responsiva que reflete meus conhecimentos adquiridos. Este projeto foi uma oportunidade de colocar em prática minhas habilidades e explorar as possibilidades de design responsivo
