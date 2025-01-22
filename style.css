@@ -74,12 +74,39 @@ nav img{
     height: 45px;
 }
 
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav ul a{
     text-decoration: none;
     color: var(--green);
-    margin: 0 35px;
+    
 }
 
 section{
     height: 1200px;
+}
+
+/* Responsividade */
+
+/* Tablet */
+
+@media (max-width: 767px){
+
+    header .container{
+        width: 100%;
+        
+    }
+
+}
+
+/* Celular*/
+
+@media (max-width: 480px){
+
+   
+
 }
