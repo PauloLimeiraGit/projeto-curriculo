@@ -71,6 +71,7 @@ nav{
     padding: 0 100px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 header .container img{
@@ -119,6 +120,7 @@ nav ul a svg{
     height: 100%;
     display: block;
     margin: 0 auto;    
+    object-fit: cover;
 }
 
 .about-me .img-container .line1{
@@ -155,6 +157,21 @@ nav ul a svg{
     header .container button{
         margin-top:15px;
     }
+
+    .about-me{
+        flex-direction: column;
+        padding: 30px  30px;
+        
+    }
+    .about-me .container{
+        padding: 0;
+        margin-bottom: 70px;
+    }
+    
+    .about-me .container, .about-me .img-container{
+        width: 100%;
+    }
+  
 }
 /* Tablet */
 
@@ -184,7 +201,7 @@ nav ul a svg{
 
 /* Celular*/
 
-@media (max-width: 400px){
+@media (max-width: 480px){
     
     header .container h1{
         font-size: 22px;
