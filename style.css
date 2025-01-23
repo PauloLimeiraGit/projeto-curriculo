@@ -97,10 +97,48 @@ nav ul a svg{
     display: none;
 }
 
-section{
-    height: 1200px;
+.about-me{
+    display: flex;
+    padding: 100px;
 }
 
+.about-me .container{
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container h1{
+    color: var(--green);
+}
+.about-me .img-container{
+    width: 50%;
+    position: relative;
+}
+.about-me .img-container img{
+    width: 75%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;    
+}
+
+.about-me .img-container .line1{
+    width: calc(75% + 40px);
+    height: calc(100% + 40px);
+    border: 1px solid var(--green);
+    position: absolute;
+    transform: rotate(-3.3deg);
+    top: -20px;
+    left: calc(50% - 75%/2 - 20px);
+}
+.about-me .img-container .line2{
+    width: calc(75% + 40px);
+    height: calc(100% + 40px);
+    border: 1px solid var(--purple);
+    position: absolute;
+    transform: rotate(3.3deg);
+    top: -20px;
+    left: calc(50% - 75%/2 - 20px);
+}
 /* Responsividade */
 
 /* Small Pc*/
