@@ -43,9 +43,11 @@ button{
 /* Aqui começa o projeto */
 
 header{
-    height: calc(100vh - 65px);
+    max-width: 1600px;
+    height: calc(100vh - 100px);
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 header .container{
@@ -63,6 +65,8 @@ header .container button{
 }
 
 nav{
+    margin: 0 auto;
+    max-width: 1600px;
     background: var(--bg-dark);
     height: 65px;
     display: flex;
@@ -103,6 +107,9 @@ nav ul a svg{
 .about-me{
     display: flex;
     padding: 100px;
+    max-width: 1600px;
+    margin: 100px auto;
+
 }
 
 .about-me .container{
@@ -147,7 +154,8 @@ nav ul a svg{
 /* Section services */
 
 .service{
-    width: 100%;
+    margin: 100px auto;
+    max-width: 1600px;
     padding: 20px 100px;
     text-align: center;
    
@@ -193,6 +201,8 @@ nav ul a svg{
 
 
 .portfolio{
+    margin: 100px auto;
+    max-width: 1600px;
     height: 800px;
     text-align: center;
     padding: 0 100px;
@@ -201,7 +211,7 @@ nav ul a svg{
 .blur{
     background: url(Assets/space.jpg);
     background-size: cover;
-    width: 100%;
+    width: 80%;
     height: 70%;
     filter: blur(300px);
     position: absolute;
@@ -270,6 +280,8 @@ nav ul a svg{
 .curriculo{
     padding: 0 100px;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .curriculo .curriculo-container{
@@ -337,10 +349,10 @@ nav ul a svg{
         margin-bottom: 70px;
     }
     
-    .about-me .container, .about-me .img-container{
+    .about-me .container, .about-me .img-container, .curriculo .curriculo-container{
         width: 100%;
     }
-    .service, .portfolio{
+    .service, .portfolio, .curriculo{
         padding: 20px 30px;
     }
 
@@ -366,12 +378,18 @@ nav ul a svg{
         margin-top: 50px;
     }
 
+    .curriculo .curriculo-container {
+        display: block;
+    }
+    .curriculo .curriculo-container img, .curriculo .curriculo-container .info-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 30px;
+    }
+
+
     /* Portfolio */
 
-    
-
-    
-   
   
 }
 /* Tablet */
