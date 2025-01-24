@@ -76,6 +76,8 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1;
+
+    
 }
 
 header .container img{
@@ -319,7 +321,39 @@ nav ul a svg{
 
 .button2 svg{
     margin-right: 10px;
+}
+.cta{
+    max-width: 800px;
+    margin: 200px auto 50px auto;
+    text-align: center;
+}
+
+.cta .cta-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+}
+
+.cta .cta-container h3{
+    font-weight: 300;
+}
+
+.cta .cta-container .cta-icon a{
+    color: white;
+    margin: 25px;
+}
+
+.cta .cta-container button{
+    margin: 20px 0 50px 0;
+}
+.footer{
+    width: 100%;
+    height: 65px;
+    background: #2F3034;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsividade */
@@ -384,7 +418,7 @@ nav ul a svg{
     .curriculo .curriculo-container img, .curriculo .curriculo-container .info-container {
         width: 100%;
         margin: 0 auto;
-        padding: 50px 30px;
+        padding: 50px 0px;
     }
 
 
@@ -440,10 +474,22 @@ nav ul a svg{
         bottom:0;
         width: 100%;
     }
+    
     nav ul{
          font-size: 12px;
     }
+    
+    .curriculo .curriculo-container .dados {
+        padding-right: 10px;
+        
+    }
 
-  
+    .curriculo .curriculo-container .dados  {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .curriculo .curriculo-container img{
+        width: 40%;
+    }
 
 }
