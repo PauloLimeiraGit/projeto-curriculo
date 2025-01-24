@@ -191,21 +191,30 @@ nav ul a svg{
 
 /* section portfólio */
 
+
 .portfolio{
+    height: 800px;
     text-align: center;
     padding: 0 100px;
-    margin-bottom: 100px;     
-    margin-top: 100px;
-    
+    position: relative;
+}
+.blur{
+    background: url(Assets/space.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    filter: blur(300px);
+    position: absolute;
 }
 .portfolio h1{
     color: var(--green);   
 }
 .portfolio-container{
     max-width: 1200px;
-     display: flex;
+    display: flex;
     justify-content:space-between;
-    margin: 0 auto;  
+    margin: 100px auto;  
+    
 }
 
 .portfolio-card{
@@ -215,8 +224,7 @@ nav ul a svg{
     border-radius: 16px;
     max-width: 360px;
     text-align: left;
-    padding: 50px 30px;
-    
+    padding: 50px 30px; 
 }
 
 .portfolio-card + .portfolio-card{
@@ -227,16 +235,15 @@ nav ul a svg{
 }
 .linha-port{
     border: 1px solid var(--green);
-    width: 320px;
-    height: 200px;
+    width: 97%;
+    height: 97%;
     transform: rotate(2deg);
     position: absolute;
-    left: calc(50% - 160px);
+    left: calc(50% - 97%/2 - 10px);
     border-radius: 25px;
 }
 .img-card-container img{
-        width: 300px;
-        height: 200px;
+        width: 95%;
         border-radius: 30px;
 }
 
@@ -255,7 +262,9 @@ nav ul a svg{
     border-radius: 10px;
 }
 
-
+.portfolio .portfolio-card p{
+    margin: 0;
+}
 
 
 /* Responsividade */
@@ -288,22 +297,38 @@ nav ul a svg{
     .about-me .container, .about-me .img-container{
         width: 100%;
     }
-    .service{
+    .service, .portfolio{
         padding: 20px 30px;
     }
 
-    .service .service-container{
+    .service .service-container, .portfolio-container{
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
-    .service-container .card {
+    
+    .service-container .card , .portfolio-card {
         width: 100%;
         padding: 20px 30px;
+        margin: 15px 0;
     }
-    .card{
-        margin: 20px 0;
+    .portfolio-card + .portfolio-card{
+        margin-left: 0;
     }
+    
+    .portfolio{
+        height: 100%;
+    }
+
+    .portfolio-container{
+        margin-top: 50px;
+    }
+
+    /* Portfolio */
+
+    
+
+    
+   
   
 }
 /* Tablet */
