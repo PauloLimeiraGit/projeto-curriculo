@@ -266,6 +266,49 @@ nav ul a svg{
     margin: 0;
 }
 
+/* Section curriculo */
+.curriculo{
+    padding: 0 100px;
+    text-align: center;
+}
+
+.curriculo .curriculo-container{
+    display: flex;
+    margin: 100px 0;
+}
+.curriculo-container img{
+    width: 50%;
+}
+
+.info-container{
+    width: 50%;
+    text-align: left;
+    display: flex;
+    margin: 0;
+    padding-right: 50px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dados{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+}
+.button2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #2F3034;
+   border:1px solid var(--green);
+   color: var(--green);
+}
+
+.button2 svg{
+    margin-right: 10px;
+    
+}
 
 /* Responsividade */
 
