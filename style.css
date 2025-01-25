@@ -8,6 +8,9 @@ body, input, button, select, textarea{
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 html, body{
     margin: 0;
